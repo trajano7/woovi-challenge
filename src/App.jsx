@@ -13,33 +13,39 @@ import { CssBaseline } from "@mui/material";
 import CardPaymentPage from "./pages/CardPayment";
 import ErrorPage from "./pages/Error";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <RootPage />,
-    errorElement: <ErrorPage />,
-    children: [
-      { index: true, element: <Navigate to="/payment" /> },
-      {
-        path: "payment",
-        children: [
-          {
-            index: true,
-            element: <PaymentPage />,
-          },
-          {
-            path: "pix-qr-code",
-            element: <PixPaymentPage />
-          },
-          {
-            path: "card-form",
-            element: <CardPaymentPage />
-          }
-        ],
-      },
-    ],
-  },
-]);
+const basename =
+  process.env.NODE_ENV === "production" ? "/woovi-challenge" : "/";
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <RootPage />,
+      errorElement: <ErrorPage />,
+      children: [
+        { index: true, element: <Navigate to="/payment" /> },
+        {
+          path: "payment",
+          children: [
+            {
+              index: true,
+              element: <PaymentPage />,
+            },
+            {
+              path: "pix-qr-code",
+              element: <PixPaymentPage />,
+            },
+            {
+              path: "card-form",
+              element: <CardPaymentPage />,
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  { basename: basename }
+);
 
 function App() {
   return (
