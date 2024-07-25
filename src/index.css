@@ -1,0 +1,37 @@
+/* Reset básico */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Variáveis globais */
+:root {
+  --font-family: Nanito, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --line-height: 1.5;
+  --font-weight: 400;
+  --color-light: #4d4d4d;
+  --color-dark: #ffffff;
+  --background-light: #ffffff;
+  --background-dark: #242424;
+  --brand-color: #03d69d;
+  --box-color: #133a6f;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Estilos globais */
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: var(--font-weight);
+  color: var(--color-light);
+  background-color: var(--background-light);
+  margin: 0;
+  margin: center;
+  min-width: 464px;
+  min-height: 100vh;
+}

@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.875rem;
+  color: #b2b2b2;
+  margin-top: 2.5rem;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer img {
+  display: block;
+  width: 4rem;
+  height: auto;
+  filter: brightness(0) saturate(100%) invert(84%) sepia(4%) saturate(7%)
+    hue-rotate(327deg) brightness(87%) contrast(83%);
+}

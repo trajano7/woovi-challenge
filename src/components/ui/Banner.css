@@ -1,0 +1,12 @@
+.ribbon {
+    --r: .8em; /* Controla o formato da faixa */
+    padding: .3rem;
+    padding-inline: 2rem;
+    padding-inline-start: 1rem;
+    line-height: 1;
+    clip-path: polygon(0 0, 100% 0, calc(100% - var(--r)) 50%, 100% 100%, 0 100%);
+    background: #133A6F; /* Cor de fundo azul */
+    /* width: fit-content; */
+    border-radius: 4px;
+    margin-top: .7rem;
+  }
