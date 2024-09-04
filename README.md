@@ -23,7 +23,7 @@ This project demonstrates the ability to follow a specific design and implement 
   cd woovi-challenge
   ```
 
-2. I**Install the dependencies:**
+2. **Install the dependencies:**
 
   ```bash
   npm install
