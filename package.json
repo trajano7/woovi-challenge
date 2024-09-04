@@ -1,6 +1,6 @@
 {
   "name": "woovi-challenge",
-  "private": true,
+  "private": false,
   "homepage": "https://trajano7.github.io/woovi-challenge",
   "version": "0.0.0",
   "type": "module",
