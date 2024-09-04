@@ -12,9 +12,7 @@ import PixPaymentPage from "./pages/PixPayment";
 import { CssBaseline } from "@mui/material";
 import CardPaymentPage from "./pages/CardPayment";
 import ErrorPage from "./pages/Error";
-
-const basename =
-  process.env.NODE_ENV === "production" ? "/woovi-challenge" : "/";
+import { basename } from "./config";
 
 const router = createBrowserRouter(
   [
