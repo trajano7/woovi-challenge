@@ -8,5 +8,30 @@ The development of this project was carried out using the following technologies
 - **MUI (Material-UI)**: UI component library for React, based on Material Design.
 - **React Router**: Library for routing in React applications.
 - **React Hooks**: Features of React for managing state and side effects functionally.
+- **Vite**: A fast build tool and development server for modern web projects.
+
+The page for this project is available and can be accessed at the following link: [Woovi Challenge Deploy](https://trajano7.github.io/woovi-challenge/).
 
 This project demonstrates the ability to follow a specific design and implement it using modern front-end development practices.
+
+## How to Run Locally
+
+1. **Clone the repository and access the project folder:**
+
+  ```bash
+  git clone https://github.com/trajano7/woovi-challenge.git
+  cd woovi-challenge
+  ```
+
+2. I**Install the dependencies:**
+
+  ```bash
+  npm install
+  ```
+
+3. **Run the application**
+
+  ```bash
+  npm run dev
+  ```
+
